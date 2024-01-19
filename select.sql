@@ -137,12 +137,14 @@ select
 	count(*) as address_count
 from
 	student_tb
+# where
 group by
 	# name 이름과 어드레스가 같으면
 	address
     # having 뺴면 각각 1개 2개이상 아니기 때문에 having이면 안나옴.
 having
 	address_count >= 2
+# orderstudent_tb by 마지막(select 다음)
 order by
 	address_count desc,
     address asc; # 오름차순(기본)asc desc 
