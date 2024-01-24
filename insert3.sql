@@ -12,3 +12,11 @@ INSERT INTO `temp_book_tb` VALUES (1,'BGK000462348','(요리조리 열어 보는
 
 SELECT * from db_study.temp_book_tb;
 
+select
+	*
+from
+	book_view
+where 
+	1 = 1
+    or book_name like '%금%'
+    or author_name like '%토이%'
